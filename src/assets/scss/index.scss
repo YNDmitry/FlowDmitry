@@ -1,0 +1,62 @@
+@import './abstracts/variables';
+@import './abstracts/functions';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './modules/buttons';
+@import './modules/spacing.scss';
+@import './modules/preloader.scss';
+@import './modules/page-transition';
+@import './modules/cursor.scss';
+
+@import './pages/About/index.scss';
+@import './pages/Homepage/index.scss';
+@import './pages/MyWorks/index.scss';
+@import './pages/Error/index.scss';
+@import './pages/Layouts/main.scss';
+
+@import '../../../node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+
+* {
+  cursor: none;
+}
+
+a {
+  display: inline-block;
+}
+
+h1, h2 {
+  font-family: Syne, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h1 {
+  font-size: pxToVw(42px);
+  line-height: 1.35em;
+}
+
+h2 {
+  font-size: pxToVw(35px);
+  line-height: 1.35em;
+}
+
+p {
+  font-size: pxToVw(28px);
+  line-height: 1.35em;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}

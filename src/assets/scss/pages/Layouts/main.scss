@@ -1,0 +1,16 @@
+.main-layout {
+  padding-top: pxToVw(96px);
+  padding-right: pxToVw(96px);
+  padding-left: pxToVw(96px);
+  overflow: hidden;
+
+  &__arrow {
+    position: fixed;
+    right: pxToVw(36px);
+    bottom: pxToVw(28px);
+  }
+}
+
+.mask {
+  overflow: hidden;
+}

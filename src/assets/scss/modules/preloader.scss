@@ -1,0 +1,45 @@
+.p-overlay {
+  position: fixed;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 100000;
+}
+
+.loading-enter-active,
+.loading-enter-to,
+.loading-enter,
+.loading-leave-active {
+  transition: all 0.5s ease;
+  .mask {
+    & h1 {
+      transition: all 0.5s ease;
+      transform: translateY(100%);
+    }
+  }
+}
+
+.loading-leave-to {
+  opacity: 0;
+}
+.loading-enter-to {
+  .mask {
+    & h1 {
+      transform: translateY(0%);
+    }
+  }
+}
+.loading-leave-to {
+  .mask {
+    & h1 {
+      transform: translateY(-100%);
+    }
+  }
+}

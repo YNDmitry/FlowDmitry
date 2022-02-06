@@ -1,0 +1,22 @@
+{
+  "name": "flowdmitry",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.9.1",
+    "locomotive-scroll": "^4.1.4",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12",
+    "vue3-lottie": "^1.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "sass": "^1.49.7",
+    "vite": "^2.7.2"
+  }
+}
